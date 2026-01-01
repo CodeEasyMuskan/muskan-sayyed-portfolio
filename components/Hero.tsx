@@ -18,18 +18,18 @@ const Hero: React.FC = () => {
 
         {/* Name with Peeking Character */}
         <div className="mb-6 relative inline-block">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black font-montserrat tracking-tighter leading-[1.1] opacity-0 animate-reveal-text [animation-delay:300ms]" style={{ animationFillMode: 'forwards' }}>
+          <h1 className="text-3xl xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black font-montserrat tracking-tighter leading-[1.1] opacity-0 animate-reveal-text [animation-delay:300ms]" style={{ animationFillMode: 'forwards' }}>
             Hi, I’m <br className="sm:hidden" />
             <span className="relative">
               Muska
               <span className="relative inline-block">
-                n
+                {'n'}
                 {/* Ultra Cute Peeking Girl Character Container - Increased dimensions to prevent clipping */}
-                <div className="absolute -top-16 sm:-top-24 left-1/2 -translate-x-1/2 w-48 h-48 -z-10 pointer-events-none flex justify-center overflow-visible">
-                  <div className="relative animate-character-peek flex flex-col items-center overflow-visible">
+                <div className="absolute -top-16 sm:-top-24 md:-top-28 left-1/2 -translate-x-1/2 w-36 sm:w-48 md:w-52 h-36 sm:h-48 md:h-52 -z-10 pointer-events-none flex justify-center overflow-visible">
+                  <div className="relative animate-character-peek sm:animate-none md:animate-character-peek flex flex-col items-center overflow-visible">
                      
                      {/* Refined Speech Bubble - Adjusted positioning */}
-                     <div className="absolute -top-6 sm:-top-8 -right-16 sm:-right-20 z-50 animate-bubble pointer-events-none">
+                     <div className="absolute -top-6 sm:-top-8 xs:-right-10 -right-16 sm:-right-20 z-50 animate-bubble pointer-events-none">
                         <div className="relative glass px-3 py-2 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-xl">
                            <span className="text-[10px] sm:text-xs font-black text-cyan-400 uppercase tracking-tighter whitespace-nowrap block">Hii! 👋</span>
                            {/* Tail of the bubble */}
@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
             href="https://www.youtube.com/@CodeEasy_withMuskan" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-4 px-8 py-4 sm:px-10 sm:py-5 rounded-2xl bg-white text-slate-900 font-black text-sm sm:text-base md:text-lg transition-all hover:scale-105 active:scale-95 shadow-[0_20px_40px_rgba(255,255,255,0.05)] overflow-hidden"
+            className="group relative inline-flex items-center gap-3 px-6 py-3 sm:px-10 sm:py-5 rounded-2xl bg-white text-slate-900 font-black text-sm sm:text-base md:text-lg transition-all hover:scale-105 active:scale-95 shadow-[0_20px_40px_rgba(255,255,255,0.05)] overflow-hidden"
           >
             <div className="absolute inset-0 bg-cyan-400 translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500"></div>
             <Youtube size={24} className="text-red-600 relative z-10" />
@@ -122,7 +122,7 @@ const Hero: React.FC = () => {
       <div className="absolute top-[30%] left-[-10%] w-[50%] h-[300px] bg-cyan-600/5 rounded-full blur-[120px] -z-10 animate-pulse"></div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-6 md:left-1/2 md:-translate-x-1/2 opacity-20 animate-bounce hidden sm:block">
+      <div className="absolute bottom-10 left-6 md:left-1/2 md:-translate-x-1/2 opacity-20 animate-bounce hidden md:block">
         <ChevronDown size={24} />
       </div>
     </section>
