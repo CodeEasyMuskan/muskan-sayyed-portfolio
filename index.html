@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Muskan Sayyed | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;700;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-color: #020617;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-color);
+        color: #f8fafc;
+        overflow-x: hidden;
+        -webkit-tap-highlight-color: transparent;
+        text-rendering: optimizeLegibility;
+      }
+      .font-montserrat { font-family: 'Montserrat', sans-serif; }
+      .font-mono { font-family: 'Fira Code', monospace; }
+      
+      .glass {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #22d3ee 0%, #818cf8 50%, #d946ef 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .animate-reveal-text {
+        animation: revealText 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes revealText {
+        0% { opacity: 0; transform: translateY(15px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      /* 3D Depth Utilities - Critical for the 3D Look */
+      .perspective-2000 { perspective: 2000px; }
+      .preserve-3d { transform-style: preserve-3d; }
+      .translate-z-20 { transform: translateZ(20px); }
+      .translate-z-40 { transform: translateZ(40px); }
+      .translate-z-60 { transform: translateZ(60px); }
+      .translate-z-80 { transform: translateZ(80px); }
+      .translate-z-100 { transform: translateZ(100px); }
+
+      /* Smooth Floating Animation */
+      @keyframes float {
+        0%, 100% { transform: translateY(0) translateZ(50px); }
+        50% { transform: translateY(-15px) translateZ(80px); }
+      }
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
+      }
+
+      /* Character Peek Animation */
+      @keyframes characterPeek {
+        0%, 5%, 95%, 100% { transform: translateY(100%); opacity: 0; }
+        15%, 85% { transform: translateY(28%); opacity: 1; }
+        25% { transform: translateY(28%) rotate(-5deg); }
+        35% { transform: translateY(28%) rotate(5deg); }
+        45% { transform: translateY(22%) rotate(0deg); }
+      }
+      .animate-character-peek {
+        animation: characterPeek 8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+      }
+
+      @keyframes bubbleFloat {
+        0%, 18%, 82%, 100% { transform: scale(0) translateY(10px); opacity: 0; }
+        25%, 75% { transform: scale(1) translateY(0); opacity: 1; }
+      }
+      .animate-bubble {
+        animation: bubbleFloat 8s ease-in-out infinite;
+      }
+
+      /* Glowing Skill Cards */
+      .skill-glow-cyan {
+        box-shadow: 0 0 40px rgba(34, 211, 238, 0.4);
+        border-color: rgba(34, 211, 238, 0.6) !important;
+      }
+      .skill-glow-purple {
+        box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+        border-color: rgba(168, 85, 247, 0.6) !important;
+      }
+      .skill-glow-green {
+        box-shadow: 0 0 40px rgba(74, 222, 128, 0.4);
+        border-color: rgba(74, 222, 128, 0.6) !important;
+      }
+
+      /* Reveal Animation for sections */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: var(--bg-color); }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+    </style>
+
+  <link rel="stylesheet" href="/index.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+      }
+    }
+    </script>
+  <script type="module" crossorigin src="/assets/index-D-S6nrBr.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
